@@ -1,0 +1,10 @@
+{
+    "name": "spa-theme",
+    "version": "0.0.0",
+    "homepage": "https://github.com/theantichris/SPA-Theme",
+    "private": true,
+    "dependencies": {
+        "angular": "1.2.x",
+        "angular-mocks": "1.2.x"
+    }
+}

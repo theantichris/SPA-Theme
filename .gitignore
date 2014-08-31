@@ -3,3 +3,6 @@
 
 # PhpStorm
 .idea/*
+
+# Bower
+bower_components/*
