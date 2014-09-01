@@ -1,3 +1,5 @@
-<p>This is the main HTML file.</p>
-
 <p><a href="demo">Demo Link</a></p>
+
+<ul>
+	<li ng-repeat="post in posts"><a href="{{post.url}}">{{post.title}}</a></li>
+</ul>
