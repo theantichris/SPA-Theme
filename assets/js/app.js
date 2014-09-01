@@ -6,6 +6,7 @@
 	spaThemeApp.config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
 		$locationProvider.html5Mode(true);
 		$routeProvider
-			.when('/', {templateUrl: themeDir + '/partials/main.html', controller: 'MainCtrl'});
+			.when('/', {templateUrl: themeDir + '/partials/main.html', controller: 'MainCtrl'})
+			.when('/demo', {templateUrl: themeDir + '/partials/demo.html', controller: 'MainCtrl'});
 	}]);
 })();
