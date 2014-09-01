@@ -27,6 +27,7 @@ function spa_theme_register_scripts_styles() {
 	wp_enqueue_script( 'angular-route' );
 
 	wp_register_script( 'spaThemeApp', get_template_directory_uri() . '/assets/js/app.js', array( 'angular-route' ), $version, true );
+	wp_localize_script( 'spaThemeApp', 'themeDir', get_template_directory_uri() );
 	wp_enqueue_script( 'spaThemeApp' );
 
 	wp_register_script( 'spaThemeControllers', get_template_directory_uri() . '/assets/js/controllers.js', array( 'spaThemeApp' ), $version, true );
