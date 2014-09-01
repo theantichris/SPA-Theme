@@ -11,6 +11,7 @@ function spa_theme_register_scripts_styles() {
 	wp_enqueue_style( 'normalize-css' );
 
 	wp_register_script( 'angular', get_template_directory_uri() . $bower_dir . '/angular/angular.min.js', array(), $version );
+	wp_enqueue_script( 'angular' );
 }
 
 add_action( 'wp_enqueue_scripts', 'spa_theme_register_scripts_styles' );
