@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html <?php language_attributes(); ?>>
-<head ng-app="spaThemeApp">
+<html <?php language_attributes(); ?> ng-app="spaThemeApp">
+<head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
 	<meta name="description" content="">
