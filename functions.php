@@ -23,7 +23,7 @@ function spa_theme_register_scripts_styles() {
 	wp_register_script( 'angular', get_template_directory_uri() . $bower_dir . '/angular/angular.min.js', array(), $version );
 	wp_enqueue_script( 'angular' );
 
-	wp_register_script( 'angular-route', get_template_directory_uri() . $bower_dir . '/angular-route/angular-route.min.js', array('angular'), $version );
+	wp_register_script( 'angular-route', get_template_directory_uri() . $bower_dir . '/angular-route/angular-route.min.js', array( 'angular' ), $version );
 	wp_enqueue_script( 'angular-route' );
 
 	wp_register_script( 'spaThemeApp', get_template_directory_uri() . '/assets/js/app.js', array( 'angular-route' ), $version, true );
