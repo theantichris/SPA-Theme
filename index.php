@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
-<head>
+<head ng-app="spaThemeApp">
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
 	<meta name="description" content="">
@@ -11,6 +11,8 @@
 </head>
 <body <?php body_class(); ?>>
 
-<?php wp_footer(); ?>
+	{{ 1 + 1 }}
+
+	<?php wp_footer(); ?>
 </body>
 </html>

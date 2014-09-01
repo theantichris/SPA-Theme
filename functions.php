@@ -22,6 +22,9 @@ function spa_theme_register_scripts_styles() {
 
 	wp_register_script( 'angular', get_template_directory_uri() . $bower_dir . '/angular/angular.min.js', array(), $version );
 	wp_enqueue_script( 'angular' );
+
+	wp_register_script( 'spaThemeApp', get_template_directory_uri() . '/assets/js/app.js', array( 'angular' ), $version, true );
+	wp_enqueue_script( 'spaThemeApp' );
 }
 
 add_action( 'wp_enqueue_scripts', 'spa_theme_register_scripts_styles' );
