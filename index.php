@@ -13,7 +13,7 @@
 </head>
 <body <?php body_class(); ?>>
 
-	{{ 1 + 1 }}
+	<div ng-view></div>
 
 	<footer>&copy; <?= date('Y') . ' - ' . get_bloginfo('name'); ?></footer>
 	<?php wp_footer(); ?>
