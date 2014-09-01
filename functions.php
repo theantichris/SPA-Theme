@@ -1,8 +1,18 @@
 <?php
 
+if ( ! isset( $content_width ) ) {
+	$content_width = 900;
+}
+
+add_theme_support( 'automatic-feed-links' );
+
 function spa_theme_register_scripts_styles() {
-	$version   = '0.0.0';
+	$version   = '0.0.1';
 	$bower_dir = '/bower_components';
+
+	if ( is_singular() ) {
+		wp_enqueue_script( "comment-reply" );
+	}
 
 	wp_register_script( 'modernizr', get_template_directory_uri() . $bower_dir . '/modernizr/modernizr.js', array(), $version );
 	wp_enqueue_script( 'modernizr' );
