@@ -1,5 +1,7 @@
 'use strict';
 
 (function () {
-	var spaThemeApp = angular.module('spaThemeApp', []);
+	var spaThemeApp = angular.module('spaThemeApp', ['ngRoute']);
+
+
 })();
