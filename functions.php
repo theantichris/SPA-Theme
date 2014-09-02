@@ -35,3 +35,14 @@ function spa_theme_register_scripts_styles() {
 }
 
 add_action( 'wp_enqueue_scripts', 'spa_theme_register_scripts_styles' );
+
+add_filter( 'status_header', function ( $status_header, $header, $text, $protocol ) {
+	if ( 404 == $header ) {
+		$header = 200;
+	}
+
+	$text          = get_status_header_desc( $header );
+	$header_string = "$protocol $header $text";
+
+	return $header_string;
+}, 10, 4 );
