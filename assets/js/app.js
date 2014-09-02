@@ -7,8 +7,8 @@
 		$locationProvider.html5Mode(true);
 
 		$routeProvider.when('/', {
-			templateUrl: themeDir + '/partials/main.html',
-			controller : 'IndexCtrl'
+			templateUrl: themeDir + '/partials/home.html',
+			controller : 'HomeCtrl'
 		});
 
 		$routeProvider.when('/blog/:slug', {
