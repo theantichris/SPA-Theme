@@ -14,14 +14,14 @@
 	}]);
 
 	spaThemeControllers.controller('PostDetailCtrl', ['$scope', '$http', '$routeParams', function ($scope, $http, $routeParams) {
-		$http.get('/wp-json/posts?slug=' + $routeParams.slug).success(function (data) {
-			$scope.post = data.post;
+		$http.get('/wp-json/posts?filter[name]=' + $routeParams.slug).success(function (data) {
+			$scope.post = data[0];
 		});
 	}]);
 
 	spaThemeControllers.controller('PageDetailCtrl', ['$scope', '$http', '$routeParams', function ($scope, $http, $routeParams) {
-		$http.get('/wp-json/pages?slug=' + $routeParams.slug).success(function (data) {
-			$scope.post = data.post;
+		$http.get('/wp-json/pages?filter[name]=' + $routeParams.slug).success(function (data) {
+			$scope.page = data[0];
 		});
 	}]);
 })();
