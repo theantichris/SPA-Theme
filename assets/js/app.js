@@ -8,7 +8,6 @@
 
 		$routeProvider
 			.when('/', {templateUrl: themeDir + '/partials/main.html', controller: 'IndexCtrl'})
-			.when('/demo', {templateUrl: themeDir + '/partials/demo.html', controller: 'IndexCtrl'})
 			.when('/:slug', {templateUrl: themeDir + '/partials/postDetail.html', controller: 'PostDetailCtrl'});
 	}]);
 })();
