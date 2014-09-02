@@ -3,7 +3,7 @@
 (function () {
 	var spaThemeControllers = angular.module('spaThemeControllers', []);
 
-	spaThemeControllers.controller('MainCtrl', ['$scope', '$http', function ($scope, $http) {
+	spaThemeControllers.controller('IndexCtrl', ['$scope', '$http', function ($scope, $http) {
 		$http.get('/api/get_posts').success(function (data) {
 			$scope.posts = data.posts;
 		});
